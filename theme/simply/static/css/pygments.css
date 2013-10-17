@@ -25,7 +25,7 @@
 /*Monokai*/
 .codehilite { background-color: #49483e !important; }
 .codehilite .c { color: #968f71 !important; } /* Comment */
-.codehilite .err { color: #960050 !important; background-color: #1e0010 !important; } /* Error */
+.codehilite .err { color: #960050 !important; } /* Error */
 .codehilite .k { color: #66d9ef !important; } /* Keyword */
 .codehilite .l { color: #ae81ff !important; } /* Literal */
 .codehilite .n { color: #f8f8f2 !important; } /* Name */
