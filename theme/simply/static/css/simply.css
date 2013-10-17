@@ -83,7 +83,7 @@ blockquote {
 	position: fixed;
 	width: 160px;
 }
-#bio {
+div#sidebar p {
 	margin-bottom: 0;
 	font-size: 90%;
 }
@@ -97,8 +97,8 @@ a, a:visited {
 }
 
 a.icon, a:visited.icon, a:active.icon {
-	padding: 0 3px;
-	font-size: 20px;
+	padding: 0 2px;
+	font-size: 18px;
 	color: #555;
 	font-weight: bold;
 }
@@ -123,7 +123,7 @@ a:hover.icon, a:focus.icon { color: #222; }
 
 h4 { margin-top: 20px; }
 h5 { margin-top: 10px; }
-p { margin: 12px 0px 12px 0px !important;}
+p { margin: 12px 0px 12px 0px !important; }
 
 .back-to-home { 
 	margin-top: 20px;
@@ -131,7 +131,7 @@ p { margin: 12px 0px 12px 0px !important;}
 }
 
 /*MOBILE*/
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 767px) {
     #sidebar {
         position: absolute;
         width: 100%;
