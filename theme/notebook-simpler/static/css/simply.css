@@ -96,7 +96,6 @@ a, a:visited {
 }
 
 a.icon, a:visited.icon, a:active.icon {
-	padding: 0 1px;
 	font-size: 17px;
 	color: #555;
 	font-weight: bold;
