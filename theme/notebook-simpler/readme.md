@@ -6,7 +6,10 @@ This is [Pelican](https://github.com/getpelican) theme designed for using [IPyth
 It utilizes a slightly modified version of [Skeleton](www.getskeleton.com) and [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 
 ### Index Screenshot
-![Index-Screenshot](https://github.com/gjreda/gregreda.com/tree/master/theme/notebook-simpler/screenshot-index.png)
+![Index-Screenshot](https://raw.github.com/gjreda/gregreda.com/master/theme/notebook-simpler/screenshot-index.png)
+
+### Article Screenshot
+![Article-Screenshot](https://raw.github.com/gjreda/gregreda.com/master/theme/notebook-simpler/screenshot-article.png)
 
 ### IPython Notebook Screenshot
-![Notebook-Screenshot](https://github.com/gjreda/gregreda.com/tree/master/theme/notebook-simpler/screenshot-notebook.png)
+![Notebook-Screenshot](https://raw.github.com/gjreda/gregreda.com/master/theme/notebook-simpler/screenshot-ipynb.png)
