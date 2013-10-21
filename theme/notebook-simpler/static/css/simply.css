@@ -160,7 +160,7 @@ code, pre.ipynb {
 
 
 /*Mobile*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     #sidebar {
         position: relative;
         width: 100%;
