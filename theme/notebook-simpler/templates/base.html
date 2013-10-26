@@ -29,6 +29,12 @@
   <meta property="og:image" content="{{ AVATAR }}">
   <meta property="og:description" content="{{ DESCRIPTION }}">
 
+  <!-- Twitter Cards
+  ================================================== -->
+  {% if TWITTER_CARDS %}
+  {% block twittercards %}{% endblock %}
+  {% endif %}
+
 	<!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

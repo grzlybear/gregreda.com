@@ -10,6 +10,16 @@
   {% endif %}
 {% endblock %}
 
+{% block twittercards %}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@{{ TWITTER_NAME }}">
+  <meta name="twitter:creator" content="@{{ TWITTER_NAME }}">
+  <meta name="twitter:domain" content="{{ DOMAIN }}">
+  <meta name="twitter:image" content="{{ SITEURL }}{{ AVATAR }}">
+  <meta name="twitter:title" content="{{ article.title }}">
+  <meta name="twitter:description" content="{{ article.description|e }}">
+{% endblock %}
+
 {% block content %}
 
   <h3 class="article-title"><a href="/{{ article.url }}" title="Permalink to {{ article.title }}">{{article.title}}</a></h3>
@@ -19,8 +29,8 @@
   </div>
     {{ ARTICLE_FOOTER }}
 
-    <a href="https://twitter.com/gjreda" class="twitter-follow-button" data-show-count="false">Follow @gjreda</a>
-    <a href="https://twitter.com/share" class="twitter-share-button" data-via="gjreda">Tweet</a>
+    <a href="https://twitter.com/{{ TWITTER_NAME }}" class="twitter-follow-button" data-show-count="false">Follow @{{ TWITTER_NAME }}</a>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ TWITTER_NAME }}">Tweet</a>
     <div class="back-to-home"><a href="/">← Back to Home</a></div>
     <hr class="large">
     
