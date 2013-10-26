@@ -1,4 +1,5 @@
 Title: More web scraping with Python (and a map)
+Date: 2013-05-06
 Slug: more-web-scraping-with-python
 Tags: scraping, python, data, tutorial, maps
 
@@ -15,11 +16,11 @@ If you're new to scraping, it might be a good idea to go back and read my [previ
 #### Finding the data
 Looking at the list, it's clear everything is in a fairly standard format - each of the sandwiches in the list gets a _`<div class="sammy">`_ and each div holds a bit more information - specifically, the rank, sandwich name, location, and a URL to a detailed page about each entry.
 
-![Delicious sammy divs](/static/images/sammy-divs.png)
+![Delicious sammy divs](/images/sammy-divs.png)
 
 Clicking through a few of the sammy links, we can see that each sandwich also gets a detailed page that includes the sandwich's name, rank, description, and price along with the restaurant's name, address, phone number, and website.  Each of these details is contained within _`<div id="sandwich">`_, which will make them very easy to get at.
 
-![Sandwich details HTML](/static/images/sammy-details.png)
+![Sandwich details HTML](/images/sammy-details.png)
 
 #### Package choices
 We'll again be using the [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/) and [urllib2](http://docs.python.org/2/library/urllib2.html) libraries.  Last time around, the choice of these two libraries generated some discussion in the post's [comments section](http://www.gregreda.com/2013/03/03/web-scraping-101-with-python/#disqus_thread), on [Reddit](http://www.reddit.com/r/Python/comments/19lnth/web_scraping_101_with_python_and_beautifulsoup/), and [Hacker News](https://news.ycombinator.com/item?id=5353347).
@@ -145,17 +146,17 @@ While we could write another Python script to turn our flat file data into KML f
 
 If you don't see Fusion Table as an option in your Google Drive account, you'll need to "connect more apps" and add it from there.
 
-![Adding Fusion Tables](/static/images/add-fusion-tables.png)
+![Adding Fusion Tables](/images/add-fusion-tables.png)
 
 Once you've added the app, create a new Fusion Table from the delimited file on your computer (our _best-sandwiches-geocode.tsv_).
 
-![Loading to Fusion Tables](/static/images/loading-to-fusion-tables.png)
+![Loading to Fusion Tables](/images/loading-to-fusion-tables.png)
 
 After you've finished your upload process, you should now have a spreadsheet-like table with the data in it.  You'll notice that some of the columns are highlighted in yellow - this means that Fusion Tables is recognizing that it's a location.  Our lat and lng columns should be all the way at the right - hover over the lat column header and select _change_ from the drop down.  This should display a prompt showing us the column type is a two column location comprised of both our lat and lng.
 
 This is probably where I should point out that we could have also used Fusion Tables to geocode our data, but writing a script in Python seemed like more fun to me.
 
-![Lat Lng column type](/static/images/lat-lng-column-type.png)
+![Lat Lng column type](/images/lat-lng-column-type.png)
 
 Now that we have our data successfully in the Fusion Table, we can use a combination HTML, CSS, some JavaScript, and the Fusion Tables API to serve up a map (you could also just click the map tab in Fusion Tables to see an embedded map of the data, but that's not as fun).  We can even style the map with the [Google Maps Style Wizard](http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html).
 

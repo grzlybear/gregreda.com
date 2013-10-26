@@ -2,6 +2,9 @@ Title: Web Scraping 101 with Python
 Date: 2013-03-03
 Slug: web-scraping-101-with-python
 Tags: scraping, python, data, tutorial
+Description: A beginner's guide to getting started with web scraping using Python and BeautifulSoup.
+
+_After you're done reading, check out my follow-up to this post [here](http://www.gregreda.com/2013/04/29/more-web-scraping-with-python/)._
 
 Yea, yea, I know I said I was going to [write more](http://www.gregreda.com/2013/01/23/translating-sql-to-pandas-part1/) on [pandas](http://pandas.pydata.org), but recently I've had a couple friends ask me if I could teach them how to scrape data.  While they said they were able to find a ton of resources online, all assumed some level of knowledge already.  Here's my attempt at assuming a very minimal knowledge of programming.
 
@@ -10,7 +13,7 @@ We're going to be using Python 2.7, [BeautifulSoup](http://www.crummy.com/softwa
 
 To check if you have Python 2.7 on OSX, open up [Terminal](http://en.wikipedia.org/wiki/Terminal_(OS_X)) and type _python --version_.  You should see something like this:
 
-![What Terminal should looks like](/static/images/python-version.png)
+![What Terminal should looks like](/images/python-version.png)
 
 Next, you'll need to install [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/).  If you're on OSX, you'll already have [setuptools](http://pypi.python.org/pypi/setuptools) installed.  Let's use it to install [pip](http://www.pip-installer.org/en/latest/) and use that for package management instead.
 
@@ -36,15 +39,15 @@ In looking at the [Food and Drink](http://www.chicagoreader.com/chicago/best-of-
 
 To start, we need to take a look at the HTML that displays these categories.  If you're in Chrome or Firefox, highlight "Readers' Poll Winners", right-click, and select Inspect Element.
 
-![Inspect Element](/static/images/inspect-element.png)
+![Inspect Element](/images/inspect-element.png)
 
 This opens up the browser's Developer Tools (in Firefox, you might now have to click the HTML button on the right side of the developer pane to fully show it).  Now we'll be able to see the page layout.  The browser has brought us directly to the piece of HTML that's used to display the "Readers' Poll Winners" _`<dt>`_ element.
 
-![Inspect Element some more](/static/images/inspect-element-more.png)
+![Inspect Element some more](/images/inspect-element-more.png)
 
 This seems to be the area of code where there's going to be some consistency in how the category links are displayed.  See that _`<dl class="boccat">`_ just above our "Readers' Poll Winners" line?  If you mouse over that line in your browser's dev tools, you'll notice that it highlights the __entire section__ of category links we want.  And every category link is within a _`<dd>`_ element.  Perfect!  Let's get all of them.
 
-![Inspect Element mouse over](/static/images/inspect-element-mouseover.png)
+![Inspect Element mouse over](/images/inspect-element-mouseover.png)
 
 #### Our first function - getting the category links
 Now that we know we know the _`<dl class="boccat">`_ section holds all the links we want, let's write some code to find that section, and then grab all of the links within the _`<dd>`_ elements of that section.
@@ -81,7 +84,7 @@ Now that we have our list of category links, we'd better start going through the
 
 If we look at the [Best Chef](http://www.chicagoreader.com/chicago/best-chef/BestOf?oid=4088191) category, we can see that our category is in _`<h1 class="headline">`_.  Shortly after that, we find our winner and runners-up stored in _`<h2 class="boc1">`_ and _`<h2 class="boc2">`_, respectively.
 
-![Finding our winners and runners-up](/static/images/winners-and-runners-up.png)
+![Finding our winners and runners-up](/images/winners-and-runners-up.png)
 
 Let's write some code to get all of them.
 
@@ -131,5 +134,3 @@ soup = make_soup(url) # where url is the url we're passing into the original fun
 Now that we have our main functions written, we can write a script to output the data however we'd like.  Want to write to a CSV file?  Check out Python's [DictWriter](http://docs.python.org/2/library/csv.html#csv.DictWriter) class.  Storing the data in a database?  Check out the [sqlite3](http://docs.python.org/2/library/sqlite3.html) or [other various database libraries](http://wiki.python.org/moin/DatabaseInterfaces).  While both tasks are somewhat outside of my intentions for this post, if there's interest, let me know in the comments and I'd be happy to write more.
 
 Hopefully you found this post useful.  I've put a final example script in [this gist](http://bit.ly/13yd9ng).
-
-_Read my follow-up to this post [here](http://www.gregreda.com/2013/04/29/more-web-scraping-with-python/)._

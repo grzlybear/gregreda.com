@@ -13,8 +13,6 @@ I was really just hoping some people would see it and let me know what they thou
 
 Turns out, quite a few more people than my 92 followers (at the time) have seen it in the week and a half since.  About 32,000 more.
 
-![Initial traffic from Twitter and /r/python](/static/images/initial-traffic-20130313.png)
-
 It was pretty exhilarating to watch something I wrote be shared in real-time.  Many of the [data](https://twitter.com/siah/status/308719789524799488) [nerds](https://twitter.com/treycausey/status/308342790180458496) that I admire and follow on Twitter were sharing it.  Hell, even Philadelphia's Chief Data Officer [shared it](https://twitter.com/mheadd/status/308576308810637312).  It was a ton of fun to watch and read both (fairly) positive and constructive comments about it on /r/python.  It immediately made me want to write the post you're currently reading, which I started working on two days later.
 
 #### A week later
@@ -22,12 +20,12 @@ Sitting around the following Sunday, making minor CSS tweaks to this site and fi
 
 That's when I realized it wound up at the top of [Hacker News](https://news.ycombinator.com/item?id=5353347).  And then [/r/programming](http://www.reddit.com/r/programming/comments/1a20lf/web_scraping_101_with_python/).  Traffic went through the roof.
 
-![Hacker News, /r/programming, and lots of Twitter sharing](/static/images/more-traffic-20130313.png)
+![Hacker News, /r/programming, and lots of Twitter sharing](/images/more-traffic-20130313.png)
 
 And again, the comments were positive and constructive.
 
 #### Lesson learned
-And this leads me to why you should write about things you're passionate about online.  When you're truly passionate about something, you spend a lot of time thinking and learning about it - you try to make it a part of your life.  You try to become reputable source on the topic (or even an expert).  It can be something as broad as beer, personal finance, or film; or as niche as stand-up comedy, vegan baking, or [90s midwest emo bands](http://en.wikipedia.org/wiki/Emo#Underground_popularity:_mid-1990s) (guilty).  It doesn't matter what it is as long as _you_ love it.
+And this leads me to why you should write about things you're passionate about online.  When you're truly passionate about something, you spend a lot of time thinking and learning about it - you try to make it a part of your life.  You try to become a reputable source on the topic (or even an expert).  It can be something as broad as beer, personal finance, or film; or as niche as stand-up comedy, vegan baking, or [90s midwest emo bands](http://en.wikipedia.org/wiki/Emo#Underground_popularity:_mid-1990s) (guilty).  It doesn't matter what it is as long as _you_ love it.
 
 Like me, you're likely ecstatic when you find someone you're able to get nerdy with about something you love.  You truly enjoy the topic and are always looking for ways to _learn more_ and _teach others_ about it (or just banter).
 

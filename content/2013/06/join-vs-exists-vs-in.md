@@ -2,6 +2,7 @@ Title: Join vs Exists vs In (SQL)
 Date: 2013-06-03
 Slug: join-vs-exists-vs-in
 Tags: sql, database
+Description: JOIN, EXISTS, and IN can all be used in very similar ways. This post dives into how each works and explains why one might be more beneficial than the others.
 
 Last weekend, I came across [Jeff Atwood](http://en.wikipedia.org/wiki/Jeff_Atwood)'s excellent [visual explanation of SQL joins](http://www.codinghorror.com/blog/2007/10/a-visual-explanation-of-sql-joins.html) on Hacker News.
 

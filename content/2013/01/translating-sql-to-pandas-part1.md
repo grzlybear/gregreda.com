@@ -3,6 +3,8 @@ Date: 2013-01-23
 Slug: translating-sql-to-pandas-part1
 Tags: sql, python, pandas
 
+_I wrote a three part pandas tutorial for SQL users that you can find [here].(http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/)_
+
 For some reason, I've always found SQL to a much more intuitive tool for exploring a tabular dataset than I have other languages (namely R and Python).
 
 If you know SQL well, you can do a whole lot with it, and since data is often in a relational database anyway, it usually makes sense to stick with it.  I find that my workflow often includes writing a lot of queries in SQL (using [Sequel Pro](http://www.sequelpro.com/)) to get the data the way I want it, reading it into R (with [RStudio](http://www.rstudio.com/)), and then maybe a bit more exploration, modeling, and visualization (with [ggplot2](http://ggplot2.org/)).
