@@ -25,7 +25,6 @@ DEFAULT_PAGINATION = False
 
 # FEEDS
 FEED_ALL_ATOM = "feeds/all.atom.xml"
-CATEGORY_FEED_ATOM = "feeds/%s.atom.xml"
 TAG_FEED_ATOM = "feeds/tag/%s.atom.xml"
 
 
@@ -46,3 +45,7 @@ EXTRA_PATH_METADATA = {'extra/robots.txt': {'path': 'robots.txt'},}
 DISQUS_SITENAME = "gregreda"
 GOOGLE_ANALYTICS = "UA-34295039-1"
 DOMAIN = "gregreda.com"
+
+# Twitter Cards
+TWITTER_CARDS = True
+TWITTER_NAME = "gjreda"
