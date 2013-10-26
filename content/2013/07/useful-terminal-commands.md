@@ -158,3 +158,4 @@ _Additional Resources:_
 - [Explorations in Unix](http://www.drbunsen.org/explorations-in-unix/) by [Seth Brown](http://www.drbunsen.org/)
 - [An Introduction to the Unix Shell](http://www.ceri.memphis.edu/computer/docs/unix/bshell.htm)
 - [Data Analysis with the Unix Shell](http://blog.comsysto.com/2013/04/25/data-analysis-with-the-unix-shell/)
+- [7 Command Line Tools for Data Science](http://jeroenjanssens.com/2013/09/19/seven-command-line-tools-for-data-science.html)
