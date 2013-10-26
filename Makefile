@@ -17,6 +17,8 @@ SSH_USER=root
 SSH_TARGET_DIR=/var/www
 
 DROPBOX_DIR=~/Dropbox/Public/
+S3BUCKET=s3://www.gregreda.com/
+s3cfg=~/.s3cfg
 
 help:
 	@echo 'Makefile for a pelican Web site                                        '
@@ -33,6 +35,7 @@ help:
 	@echo '   dropbox_upload                   upload the web site via Dropbox    '
 	@echo '   ftp_upload                       upload the web site via FTP        '
 	@echo '   github                           upload the web site via gh-pages   '
+	@echo '   s3                               upload the web site to s3 via s3cmd'
 	@echo '                                                                       '
 
 
@@ -73,4 +76,7 @@ github: publish
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github
+s3: publish
+	s3cmd -c $(s3cfg) -r put $(OUTPUTDIR)/* $(S3BUCKET)
+
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github s3
