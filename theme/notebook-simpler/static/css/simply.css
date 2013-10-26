@@ -138,6 +138,8 @@ hr.small {
 	font-size: 18px;
 }
 
+.caption { font-size: 12px !important; }
+
 .back-to-home { 
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -147,7 +149,7 @@ hr.small {
 /*Code Formatting*/
 code, pre.ipynb {
 	font-family: "Source Code Pro", monospace !important;
-	font-size: 12px !important;
+	font-size: 13px !important;
 }
 .highlight, pre {
 	font-family: "Source Code Pro", monospace;
