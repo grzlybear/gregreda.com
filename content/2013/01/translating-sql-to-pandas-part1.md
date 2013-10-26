@@ -3,7 +3,7 @@ Date: 2013-01-23
 Slug: translating-sql-to-pandas-part1
 Tags: sql, python, pandas
 
-_I wrote a three part pandas tutorial for SQL users that you can find [here].(http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/)_
+_I wrote a three part pandas tutorial for SQL users that you can find [here](http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/)_.
 
 For some reason, I've always found SQL to a much more intuitive tool for exploring a tabular dataset than I have other languages (namely R and Python).
 
